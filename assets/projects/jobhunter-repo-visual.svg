@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Job Hunter repository visual">
+  <rect width="1200" height="720" fill="#0f172a"/>
+  <rect x="80" y="70" width="1040" height="580" rx="22" fill="#111827" stroke="#334155"/>
+  <text x="130" y="180" fill="#e2e8f0" font-size="54" font-family="Inter, Arial" font-weight="700">Job Hunter</text>
+  <text x="130" y="238" fill="#86efac" font-size="26" font-family="Inter, Arial">Repository support visual</text>
+  <text x="130" y="292" fill="#94a3b8" font-size="22" font-family="Inter, Arial">Used as honest support art until real app screenshots are available.</text>
+</svg>

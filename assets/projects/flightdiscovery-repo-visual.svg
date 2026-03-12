@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="FlightDiscovery repository visual">
+  <rect width="1200" height="720" fill="#0b1220"/>
+  <rect x="70" y="60" width="1060" height="600" rx="24" fill="#111827" stroke="#334155"/>
+  <text x="120" y="170" fill="#e2e8f0" font-family="Inter, Arial" font-size="54" font-weight="700">FlightDiscovery</text>
+  <text x="120" y="230" fill="#67e8f9" font-family="Inter, Arial" font-size="26">Repository support visual</text>
+  <text x="120" y="286" fill="#94a3b8" font-family="Inter, Arial" font-size="22">Based on repository identity; not presented as a production screenshot.</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <rect x="56" y="56" width="1088" height="518" rx="24" fill="#111827" stroke="#334155"/>
+  <text x="110" y="245" fill="#e2e8f0" font-size="64" font-family="Inter, Arial, sans-serif" font-weight="700">
+    Yumo
+  </text>
+  <text x="110" y="320" fill="#99f6e4" font-size="42" font-family="Inter, Arial, sans-serif" font-weight="600">
+    Data Analyst & Product Builder
+  </text>
+  <text x="110" y="388" fill="#cbd5e1" font-size="30" font-family="Inter, Arial, sans-serif">
+    Self-taught analytical builder with travel industry experience
+  </text>
+</svg>
