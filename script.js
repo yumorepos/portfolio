@@ -23,7 +23,7 @@ function renderProjectCard(project) {
     : '';
 
   return `
-    <article class="project-card">
+    <article class="project-card ${project.featured ? 'featured-project' : ''}">
       <div class="project-media">
         <img src="${project.visual}" alt="${project.title} supporting visual" loading="lazy" decoding="async" />
       </div>
