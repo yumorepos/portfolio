@@ -2,8 +2,8 @@
   {
     "title": "FlightDiscovery",
     "repo": "https://github.com/yumorepos/FlightDiscovery",
-    "description": "Travel-focused flight discovery web app prototype.",
-    "whatItDoes": "Lets users explore routes and compare flight options in a clean search flow.",
+    "description": "Travel-focused flight discovery web app.",
+    "whatItDoes": "Helps users explore routes and compare options in one clean search flow.",
     "stack": [
       "JavaScript",
       "Frontend",
@@ -19,8 +19,8 @@
   {
     "title": "Job Hunter",
     "repo": "https://github.com/yumorepos/JobHunter",
-    "description": "Application-tracking tool for structured job search execution.",
-    "whatItDoes": "Tracks opportunities, statuses, and priorities so follow-ups stay organized.",
+    "description": "Application-tracking tool for structured job search.",
+    "whatItDoes": "Keeps opportunities, statuses, and priorities organized for consistent follow-up.",
     "stack": [
       "Web App",
       "JavaScript",
@@ -35,8 +35,8 @@
   {
     "title": "QueerNomads",
     "repo": "https://github.com/yumorepos/QueerNomads",
-    "description": "Inclusive travel product concept with community-centered direction.",
-    "whatItDoes": "Explores destination discovery and travel context for an LGBTQ+ audience.",
+    "description": "Inclusive travel product concept.",
+    "whatItDoes": "Explores destination discovery and context for LGBTQ+ travelers.",
     "stack": [
       "Web Product",
       "Frontend",
@@ -51,8 +51,8 @@
   {
     "title": "Portfolio",
     "repo": "https://github.com/yumorepos/portfolio",
-    "description": "Personal portfolio site for truthful, recruiter-friendly project communication.",
-    "whatItDoes": "Presents real repositories with concise context and lightweight case-study pages.",
+    "description": "Personal portfolio for truthful, recruiter-friendly project communication.",
+    "whatItDoes": "Shows real repositories with concise context and lightweight case studies.",
     "stack": [
       "HTML",
       "CSS",
