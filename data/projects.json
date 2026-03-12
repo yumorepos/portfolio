@@ -1,0 +1,50 @@
+[
+  {
+    "title": "FlightDiscovery",
+    "repo": "https://github.com/yumorepos/FlightDiscovery",
+    "description": "Travel-focused flight discovery web app prototype.",
+    "whatItDoes": "Lets users explore routes and compare flight options in a clean search flow.",
+    "stack": ["JavaScript", "Frontend", "UI/UX"],
+    "status": "Prototype",
+    "demo": "",
+    "visual": "https://opengraph.githubassets.com/1/yumorepos/FlightDiscovery",
+    "visualType": "GitHub repository social preview",
+    "detailPage": "projects/flightdiscovery.html"
+  },
+  {
+    "title": "Job Hunter",
+    "repo": "https://github.com/yumorepos/JobHunter",
+    "description": "Application-tracking tool for structured job search execution.",
+    "whatItDoes": "Tracks opportunities, statuses, and priorities so follow-ups stay organized.",
+    "stack": ["Web App", "JavaScript", "Product Tooling"],
+    "status": "In Progress",
+    "demo": "",
+    "visual": "https://opengraph.githubassets.com/1/yumorepos/JobHunter",
+    "visualType": "GitHub repository social preview",
+    "detailPage": "projects/jobhunter.html"
+  },
+  {
+    "title": "QueerNomads",
+    "repo": "https://github.com/yumorepos/QueerNomads",
+    "description": "Inclusive travel product concept with community-centered direction.",
+    "whatItDoes": "Explores destination discovery and travel context for an LGBTQ+ audience.",
+    "stack": ["Web Product", "Frontend", "Community UX"],
+    "status": "Prototype",
+    "demo": "",
+    "visual": "https://opengraph.githubassets.com/1/yumorepos/QueerNomads",
+    "visualType": "GitHub repository social preview",
+    "detailPage": "projects/queernomads.html"
+  },
+  {
+    "title": "Portfolio",
+    "repo": "https://github.com/yumorepos/portfolio",
+    "description": "Personal portfolio site for truthful, recruiter-friendly project communication.",
+    "whatItDoes": "Presents real repositories with concise context and lightweight case-study pages.",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "status": "Live",
+    "demo": "https://yumorepos.github.io/portfolio/",
+    "visual": "assets/projects/portfolio-real-screenshot.svg",
+    "visualType": "Homepage capture from this portfolio",
+    "detailPage": "projects/portfolio.html"
+  }
+]
