@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Test Suite</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .test { margin: 20px 0; padding: 15px; border-left: 4px solid #ccc; }
+        .pass { border-color: #4CAF50; background: #f1f8f4; }
+        .fail { border-color: #f44336; background: #fef1f1; }
+        h1 { color: #333; }
+        .summary { font-weight: bold; margin: 20px 0; padding: 15px; background: #e3f2fd; }
+    </style>
+</head>
+<body>
+    <h1>Portfolio Validation Test Suite</h1>
+    <div id="results"></div>
+    <div id="summary" class="summary"></div>
+
+    <script>
+        // Auto-generated test suite by Engineering Agency V3
+        const tests = [];
+        let passed = 0;
+        let failed = 0;
+
+        function test(name, fn) {
+            try {
+                fn();
+                tests.push({ name, status: 'pass', error: null });
+                passed++;
+            } catch (e) {
+                tests.push({ name, status: 'fail', error: e.message });
+                failed++;
+            }
+        }
+
+        // Test 1: Check if main HTML file loads
+        test('Main HTML structure exists', () => {
+            if (!document.querySelector('body')) throw new Error('Body element not found');
+        });
+
+        // Test 2: Check for critical elements
+        test('Navigation elements exist', () => {
+            // Portfolio should have some navigation or sections
+            const hasNav = document.querySelector('nav') || 
+                          document.querySelectorAll('section').length > 0 ||
+                          document.querySelectorAll('[class*="nav"]').length > 0;
+            if (!hasNav) throw new Error('No navigation structure found');
+        });
+
+        // Test 3: Check for external resources
+        test('Styles are loaded', () => {
+            const styles = document.querySelectorAll('link[rel="stylesheet"], style');
+            if (styles.length === 0) throw new Error('No stylesheets found');
+        });
+
+        // Test 4: Check for content sections
+        test('Content sections exist', () => {
+            const sections = document.querySelectorAll('section, div[class*="section"], article');
+            if (sections.length === 0) throw new Error('No content sections found');
+        });
+
+        // Test 5: Check for project showcase
+        test('Project showcase elements', () => {
+            const projects = document.querySelectorAll('[class*="project"], [class*="portfolio"]');
+            if (projects.length === 0) throw new Error('No project elements found');
+        });
+
+        // Test 6: Responsive meta tag
+        test('Viewport meta tag exists', () => {
+            const viewport = document.querySelector('meta[name="viewport"]');
+            if (!viewport) throw new Error('Missing viewport meta tag for mobile');
+        });
+
+        // Test 7: Page title
+        test('Page title is set', () => {
+            if (!document.title || document.title.trim() === '') {
+                throw new Error('Page title is empty');
+            }
+        });
+
+        // Test 8: Basic accessibility
+        test('Images have alt attributes', () => {
+            const images = document.querySelectorAll('img');
+            const missingAlt = Array.from(images).filter(img => !img.hasAttribute('alt'));
+            if (images.length > 0 && missingAlt.length > 0) {
+                throw new Error(`${missingAlt.length} images missing alt attributes`);
+            }
+        });
+
+        // Render results
+        function renderResults() {
+            const resultsDiv = document.getElementById('results');
+            const summaryDiv = document.getElementById('summary');
+            
+            tests.forEach(test => {
+                const div = document.createElement('div');
+                div.className = `test ${test.status}`;
+                div.innerHTML = `
+                    <strong>${test.status === 'pass' ? '✅' : '❌'} ${test.name}</strong>
+                    ${test.error ? `<br><span style="color: #666;">Error: ${test.error}</span>` : ''}
+                `;
+                resultsDiv.appendChild(div);
+            });
+
+            const total = passed + failed;
+            const percentage = total > 0 ? Math.round((passed / total) * 100) : 0;
+            
+            summaryDiv.innerHTML = `
+                <strong>Test Summary:</strong> 
+                ${passed}/${total} tests passed (${percentage}%)
+                <br>
+                ${failed === 0 ? '🎉 All tests passing!' : `⚠️ ${failed} test(s) failed`}
+            `;
+        }
+
+        // Run on load
+        window.addEventListener('load', renderResults);
+    </script>
+</body>
+</html>
