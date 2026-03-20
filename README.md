@@ -1,24 +1,15 @@
-# Yumo Portfolio
+# ⚠️ DEPRECATED
 
-Modern, recruiter-friendly portfolio focused on analytics + product execution with travel-domain context.
+**This repository is no longer maintained.**
 
-## Run locally
+The canonical portfolio is now at:
 
-```bash
-python -m http.server 4173
-```
+### 👉 [https://yumorepos.github.io](https://yumorepos.github.io)
 
-Then open `http://localhost:4173`.
+**Source repo:** [github.com/yumorepos/yumorepos.github.io](https://github.com/yumorepos/yumorepos.github.io)
 
-## Structure
+---
 
-- `index.html` — core portfolio page with all required sections.
-- `styles.css` — responsive design system and UI styles.
-- `script.js` — project rendering, interactions, animations, structured data.
-- `data/projects.json` — project case-study content.
-- `resume.html` — lightweight resume page.
-- `assets/` — favicon and social preview image.
+This repo was an earlier iteration with 4 projects and a "Data Analyst & Product Builder" positioning. The canonical portfolio has 10+ projects, current "Developer Portfolio" positioning, and is auto-deployed via GitHub Pages.
 
-## Deployment
-
-Host as a static site (GitHub Pages, Netlify, Cloudflare Pages).
+Do not use links from this repo in applications or public profiles.
