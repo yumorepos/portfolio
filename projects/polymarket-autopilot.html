@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polymarket Autopilot | Yumo Xu</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <main class="section">
+      <div class="container">
+        <p><a class="btn btn-secondary" href="../index.html#projects">← Back to projects</a></p>
+        <h1>Polymarket Autopilot</h1>
+        <p><strong>Status:</strong> Live</p>
+        <img src="https://opengraph.githubassets.com/1/yumorepos/polymarket-autopilot" alt="Polymarket Autopilot repository social preview" />
+
+        <h2>Overview</h2>
+        <p>Paper-trading research engine for prediction market strategies. Demonstrates quantitative mindset, engineering discipline, and product quality with end-to-end trading simulation.</p>
+
+        <h2>Tech stack</h2>
+        <p>Python 3.12+, FastAPI, SQLite, pytest (57 tests), Streamlit, mypy (strict typing), Ruff (linting)</p>
+
+        <h2>How it works</h2>
+        <ul>
+          <li><strong>Market Ingestion:</strong> Fetches live Polymarket data with offline demo mode for reproducible walkthroughs</li>
+          <li><strong>Strategy Evaluation:</strong> Multiple strategies with benchmark-relative performance and deterministic ranking</li>
+          <li><strong>Risk Management:</strong> Automated stop-loss (-10%) and take-profit (+20%) orders with position monitoring</li>
+          <li><strong>Backtesting:</strong> Single-strategy replay with metrics (Sharpe, drawdown, win rate)</li>
+          <li><strong>Dashboard:</strong> Streamlit interface with equity curves, strategy attribution, and open/closed positions</li>
+        </ul>
+
+        <h2>Why I built this</h2>
+        <p>To showcase quantitative finance skills and systematic trading approach. This project demonstrates my ability to build production-grade financial systems with explicit risk controls, transparent analytics, and comprehensive testing—essential skills for data analyst and Python developer roles.</p>
+
+        <h2>Interesting challenges</h2>
+        <ul>
+          <li><strong>Deterministic Demo Mode:</strong> Created offline mode with seeded snapshots and trades for recruiter-safe walkthroughs without API dependencies</li>
+          <li><strong>Strategy Attribution:</strong> Built explainability layer with deterministic rationale per strategy (return vs baseline, Sharpe, drawdown)</li>
+          <li><strong>Risk Framework:</strong> Implemented automated stop-loss/take-profit with position monitoring cron jobs</li>
+          <li><strong>Quality Gates:</strong> Achieved strict typing (mypy), linting (Ruff), and 57 passing tests with GitHub Actions CI</li>
+          <li><strong>Production Readiness:</strong> Global error handling, structured logging, health checks (liveness/readiness)</li>
+        </ul>
+
+        <h2>What I'd improve next</h2>
+        <ul>
+          <li><strong>Walk-forward evaluation:</strong> Rolling-window stability diagnostics</li>
+          <li><strong>Execution realism:</strong> Configurable spread/slippage/latency models in backtests</li>
+          <li><strong>Richer attribution:</strong> Reason-code decomposition at trade lifecycle level</li>
+          <li><strong>Dataset tooling:</strong> Snapshot quality checks and scenario packs for stress testing</li>
+        </ul>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li><strong>CLI:</strong> 10+ commands (init, scan, trade, backtest, compare, report, monitor-positions)</li>
+          <li><strong>Demo-ready:</strong> One-command reproducible demo (<code>demo-run</code>) for interviews</li>
+          <li><strong>Testing:</strong> 57 tests covering core logic, strategies, risk controls</li>
+          <li><strong>Documentation:</strong> Comprehensive README with architecture diagrams and command reference</li>
+          <li><strong>CI/CD:</strong> Automated tests and lint checks on every push</li>
+        </ul>
+
+        <p><a class="btn btn-primary" href="https://github.com/yumorepos/polymarket-autopilot" target="_blank" rel="noreferrer">View GitHub Repo</a></p>
+      </div>
+    </main>
+  </body>
+</html>

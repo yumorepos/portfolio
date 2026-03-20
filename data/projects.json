@@ -1,5 +1,61 @@
 [
   {
+    "title": "Flight Price Intelligence Lab",
+    "repo": "https://github.com/yumorepos/flight-price-intelligence-lab",
+    "description": "Full-stack aviation analytics platform with modern UI.",
+    "whatItDoes": "Transforms public flight data into route-level intelligence with interactive visualizations, scoring (0-100), and deal signals.",
+    "stack": [
+      "Next.js 14",
+      "TypeScript",
+      "FastAPI",
+      "PostgreSQL",
+      "Recharts"
+    ],
+    "status": "Live",
+    "demo": "https://flight-price-intelligence-lab.vercel.app",
+    "visual": "https://opengraph.githubassets.com/1/yumorepos/flight-price-intelligence-lab",
+    "visualType": "GitHub repository social preview",
+    "detailPage": "projects/flight-price-intelligence-lab.html",
+    "featured": true
+  },
+  {
+    "title": "Polymarket Autopilot",
+    "repo": "https://github.com/yumorepos/polymarket-autopilot",
+    "description": "Paper-trading research engine for prediction market strategies.",
+    "whatItDoes": "End-to-end trading system with market ingestion, strategy evaluation, risk-constrained execution simulation, backtesting, and dashboard observability.",
+    "stack": [
+      "Python 3.12+",
+      "FastAPI",
+      "SQLite",
+      "pytest",
+      "Streamlit"
+    ],
+    "status": "Live",
+    "demo": "",
+    "visual": "https://opengraph.githubassets.com/1/yumorepos/polymarket-autopilot",
+    "visualType": "GitHub repository social preview",
+    "detailPage": "projects/polymarket-autopilot.html",
+    "featured": true
+  },
+  {
+    "title": "Trading Agency Agents",
+    "repo": "https://github.com/yumorepos/trading-agency-agents",
+    "description": "4 specialized trading agents for Polymarket prediction markets.",
+    "whatItDoes": "Autonomous agents for market scanning, risk management, execution, and performance monitoring. Validated: +11.4% return, 60% win rate across 42 trades.",
+    "stack": [
+      "Python",
+      "The Agency Framework",
+      "pytest",
+      "GitHub Actions"
+    ],
+    "status": "Complete",
+    "demo": "",
+    "visual": "https://opengraph.githubassets.com/1/yumorepos/trading-agency-agents",
+    "visualType": "GitHub repository social preview",
+    "detailPage": "projects/trading-agency-agents.html",
+    "featured": true
+  },
+  {
     "title": "FlightDiscovery",
     "repo": "https://github.com/yumorepos/FlightDiscovery",
     "description": "Travel-focused flight discovery web app.",
@@ -14,7 +70,7 @@
     "visual": "https://opengraph.githubassets.com/1/yumorepos/FlightDiscovery",
     "visualType": "GitHub repository social preview",
     "detailPage": "projects/flightdiscovery.html",
-    "featured": true
+    "featured": false
   },
   {
     "title": "Job Hunter",
@@ -30,7 +86,8 @@
     "demo": "",
     "visual": "https://opengraph.githubassets.com/1/yumorepos/JobHunter",
     "visualType": "GitHub repository social preview",
-    "detailPage": "projects/jobhunter.html"
+    "detailPage": "projects/jobhunter.html",
+    "featured": false
   },
   {
     "title": "QueerNomads",
@@ -46,7 +103,8 @@
     "demo": "",
     "visual": "https://opengraph.githubassets.com/1/yumorepos/QueerNomads",
     "visualType": "GitHub repository social preview",
-    "detailPage": "projects/queernomads.html"
+    "detailPage": "projects/queernomads.html",
+    "featured": false
   },
   {
     "title": "Portfolio",
@@ -62,6 +120,7 @@
     "demo": "https://yumorepos.github.io/portfolio/",
     "visual": "assets/projects/portfolio-real-screenshot.svg",
     "visualType": "Homepage capture from this portfolio",
-    "detailPage": "projects/portfolio.html"
+    "detailPage": "projects/portfolio.html",
+    "featured": false
   }
 ]

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading Agency Agents | Yumo Xu</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <main class="section">
+      <div class="container">
+        <p><a class="btn btn-secondary" href="../index.html#projects">← Back to projects</a></p>
+        <h1>Trading Agency Agents</h1>
+        <p><strong>Status:</strong> Complete</p>
+        <img src="https://opengraph.githubassets.com/1/yumorepos/trading-agency-agents" alt="Trading Agency Agents repository social preview" />
+
+        <h2>Overview</h2>
+        <p>4 specialized trading agents for Polymarket prediction markets built using The Agency framework (50K+ GitHub stars). Demonstrates agent design, systematic trading logic, and rigorous testing.</p>
+
+        <h2>Tech stack</h2>
+        <p>Python, The Agency Framework (MIT License), pytest (14 tests), GitHub Actions CI/CD</p>
+
+        <h2>How it works</h2>
+        <ul>
+          <li><strong>Market Scanner:</strong> Finds arbitrage and correlation opportunities across 200+ markets in <5 seconds</li>
+          <li><strong>Risk Manager:</strong> Kelly Criterion sizing, position caps (5% max), stop-loss ($20), circuit breakers (-5%, -10%, -15%)</li>
+          <li><strong>Execution Agent:</strong> Places trades with precision, monitors slippage (<0.5% target), implements retry logic</li>
+          <li><strong>Performance Monitor:</strong> Tracks win rate, Sharpe ratio, max drawdown, daily P&L</li>
+        </ul>
+
+        <h2>Why I built this</h2>
+        <p>To explore multi-agent trading systems and demonstrate my ability to build modular, well-tested Python applications. This project shows I can design specialized agents with clear responsibilities, implement robust testing, and integrate with modern frameworks.</p>
+
+        <h2>Interesting challenges</h2>
+        <ul>
+          <li><strong>Agent Specialization:</strong> Designed 4 agents with distinct roles (scan, risk, execute, monitor) for separation of concerns</li>
+          <li><strong>Risk Framework:</strong> Implemented Kelly Criterion for position sizing and multi-level circuit breakers for capital protection</li>
+          <li><strong>Market Detection:</strong> Built arbitrage detector using <code>(1 - (p_yes + p_no)) > 0.5%</code> and correlation breakdown using z-score > 1.5</li>
+          <li><strong>Testing Discipline:</strong> Wrote 14 unit tests covering all agent logic with 100% pass rate</li>
+          <li><strong>Framework Integration:</strong> Integrated with The Agency framework (OpenClaw + Claude Code / Cursor / Copilot)</li>
+        </ul>
+
+        <h2>What I'd improve next</h2>
+        <ul>
+          <li>Deploy agents to live trading with conservative limits ($50 max risk)</li>
+          <li>Add portfolio optimization across multiple strategies</li>
+          <li>Implement real-time monitoring dashboard</li>
+          <li>Expand to Hyperliquid integration for lower fees and more liquid markets</li>
+          <li>Add adaptive position sizing based on market conditions</li>
+        </ul>
+
+        <h2>Validation Results</h2>
+        <ul>
+          <li><strong>Paper Trading Period:</strong> 2026-03-17</li>
+          <li><strong>Return:</strong> +11.4% ($600 → $668.41)</li>
+          <li><strong>Trades:</strong> 42 executed</li>
+          <li><strong>Average Edge:</strong> 23.4%</li>
+          <li><strong>Win Rate:</strong> ~60%</li>
+          <li><strong>Max Position:</strong> 5% (risk-controlled)</li>
+          <li><strong>Markets Scanned:</strong> 200+ Polymarket prediction markets</li>
+          <li><strong>Tests:</strong> 14 unit tests, 100% pass rate</li>
+        </ul>
+
+        <h2>Architecture</h2>
+        <p>Each agent has a dedicated markdown specification file defining its mission, capabilities, and logic:</p>
+        <ul>
+          <li><code>trading-market-scanner.md</code> — Agent 1 spec</li>
+          <li><code>trading-risk-manager.md</code> — Agent 2 spec</li>
+          <li><code>trading-executor.md</code> — Agent 3 spec</li>
+          <li><code>trading-performance-monitor.md</code> — Agent 4 spec</li>
+          <li><code>test_agents.py</code> — 14 comprehensive unit tests</li>
+        </ul>
+
+        <p><a class="btn btn-primary" href="https://github.com/yumorepos/trading-agency-agents" target="_blank" rel="noreferrer">View GitHub Repo</a></p>
+      </div>
+    </main>
+  </body>
+</html>
